@@ -10,7 +10,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverBuilder {
-    WebDriver driver;
+    private WebDriver driver;
 
     public WebDriver setupDriver(String platformName) throws IOException {
         Properties properties = getDriverProperties();

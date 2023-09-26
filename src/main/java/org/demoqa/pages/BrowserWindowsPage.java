@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 public class BrowserWindowsPage extends ChildPage {
 
     @FindBy(id = "tabButton")
-    WebElement newTabButton;
+    private WebElement newTabButton;
 
     @FindBy(id = "windowButton")
-    WebElement newWindowButton;
+    private WebElement newWindowButton;
 
     public BrowserWindowsPage(WebDriver driver) {
         super(driver);
