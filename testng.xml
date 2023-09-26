@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="OverallTest">
+        <parameter name="platformType" value="web"/>
+        <parameter name="platformName" value="chrome"/>
+        <parameter name="url" value="https://demoqa.com"/>
+        <parameter name="userName" value="fullName"/>
+        <parameter name="userEmail" value="levon@mail.com"/>
+        <parameter name="userCurrentAddress" value="currentAddress"/>
+        <parameter name="userPermanentAddress" value="permanentAddress"/>
+        <parameter name="alertName" value="Test name"/>
+        <classes>
+            <class name="tests.OverallTest">
+                <methods>
+                    <include name="testAll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--    <test name="TextBoxPageTest">-->
+<!--        <parameter name="platformType" value="web"/>-->
+<!--        <parameter name="platformName" value="chrome"/>-->
+<!--        <parameter name="url" value="https://demoqa.com"/>-->
+<!--        <parameter name="userName" value="fullName"/>-->
+<!--        <parameter name="userEmail" value="levon@mail.com"/>-->
+<!--        <parameter name="userCurrentAddress" value="currentAddress"/>-->
+<!--        <parameter name="userPermanentAddress" value="permanentAddress"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.TextBoxPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="testUserForm"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="ButtonsPageTest">-->
+<!--        <parameter name="platformType" value="web"/>-->
+<!--        <parameter name="platformName" value="chrome"/>-->
+<!--        <parameter name="url" value="https://demoqa.com"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.ButtonsPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="testButtons"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BrowserWindowsPageTest">-->
+<!--        <parameter name="platformType" value="web"/>-->
+<!--        <parameter name="platformName" value="chrome"/>-->
+<!--        <parameter name="url" value="https://demoqa.com"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.BrowserWindowsPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="testNewTabButton"/>-->
+<!--                    <include name="testNewWindowButton"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="AlertsPageTest">-->
+<!--        <parameter name="platformType" value="web"/>-->
+<!--        <parameter name="platformName" value="chrome"/>-->
+<!--        <parameter name="url" value="https://demoqa.com"/>-->
+<!--        <parameter name="alertName" value="Test name"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.AlertsPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="testAlert"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
