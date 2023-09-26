@@ -26,30 +26,30 @@ public class ChildPage extends BasePage {
         super(driver);
     }
 
-    @Step("Клик пункт меню \"Text Box\"")
+    @Step("Клик на пункт меню \"Text Box\"")
     public TextBoxPage clickTextBoxLink() {
         textBoxLink.click();
         return new TextBoxPage(driver);
     }
 
-    @Step("Клик пункт меню \"Buttons\"")
+    @Step("Клик на пункт меню \"Buttons\"")
     public ButtonsPage clickButtonsLink() {
         buttonsLink.click();
         return new ButtonsPage(driver);
     }
 
-    @Step("Клик пункт меню \"Alerts, Frame & Windows\"")
+    @Step("Клик на пункт меню \"Alerts, Frame & Windows\"")
     public void clickAlertsFramesWindowsButton() {
         this.pointToElementAndClick(alertsFramesWindowsButton);
     }
 
-    @Step("Клик пункт меню \"Browser Windows\"")
+    @Step("Клик на пункт меню \"Browser Windows\"")
     public BrowserWindowsPage clickBrowserWindowsLink() {
         this.pointToElementAndClick(browserWindowsLink);
         return new BrowserWindowsPage(driver);
     }
 
-    @Step("Клик пункт меню \"Alerts\"")
+    @Step("Клик на пункт меню \"Alerts\"")
     public AlertsPage clickAlertsPage() {
         alertsLink.click();
         return new AlertsPage(driver);

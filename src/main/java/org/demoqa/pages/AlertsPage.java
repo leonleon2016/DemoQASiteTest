@@ -51,7 +51,7 @@ public class AlertsPage extends ChildPage {
         return promptResult.getText();
     }
 
-    @Step("Клик на кнопку алерта с текстовым полем")
+    @Step("Клик на кнопку всплывающего окна с текстовым полем")
     public void clickPromptButton() {
         promptButton.click();
     }
