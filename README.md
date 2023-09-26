@@ -1,2 +1,2 @@
 # DemoqaSiteTest
-Тестовое задание с использованием TestNG и Allure.
+Тестовое задание с использованием TestNG, PageObject и Allure.
